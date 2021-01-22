@@ -7,4 +7,8 @@ class Polygon {
     get countSides() {
         return this.array.length
     }
-}t
+
+    get perimeter() {
+        return this.array.reduce((acc, cur) => acc + cur)
+    }
+}
